@@ -24,7 +24,6 @@ export default createGlobalStyle`
     font: 14px Roboto, sans-serif;
   }
 
-
   button {
     cursor: pointer;
   }
