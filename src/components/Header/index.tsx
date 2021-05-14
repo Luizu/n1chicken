@@ -25,7 +25,13 @@ export function Header(): JSX.Element {
       <Container>
         <Content>
           <Logo src="/images/Logo.png" />
-          <Navbar />
+          <Navbar>
+            <NavItem>HOME</NavItem>
+            <NavItem>QUEM SOMOS</NavItem>
+            <NavItem>CARDÁPIO</NavItem>
+            <NavItem>DEPOIMENTOS</NavItem>
+            <NavItem>UNIDADES</NavItem>
+          </Navbar>
 
           <ButtonsContainer>
             <FranchiseButton>SEJA UM FRANQUEADO</FranchiseButton>

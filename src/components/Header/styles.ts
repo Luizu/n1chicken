@@ -1,5 +1,10 @@
 import styled, { css } from 'styled-components';
 
+const media = {
+  maxMobile: '@media(max-width:800px)',
+  desktop: '@media(min-width: 1280px)',
+};
+
 interface IDropdownMenuState {
   isActive: boolean;
 }
@@ -13,17 +18,42 @@ export const Container = styled.header`
 
 export const Content = styled.div`
   max-width: 380px;
-  margin: 0 auto;
+  margin: 1rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ${media.desktop} {
+    max-width: 1000px;
+  }
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+  width: 90px;
+  height: 90px;
+`;
 
-export const Navbar = styled.nav``;
+export const Navbar = styled.nav`
+  display: none;
 
-export const NavItem = styled.a``;
+  ${media.desktop} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+export const NavItem = styled.a`
+  color: #fff;
+  padding: 1rem;
+  white-space: nowrap;
+  font-size: 1rem;
+
+  &:hover {
+    border-bottom: 2px solid #ffd800;
+    font-weight: bold;
+  }
+`;
 
 export const ButtonsContainer = styled.div`
   display: flex;
@@ -49,6 +79,10 @@ export const FranchiseButton = styled.button`
     background-color: #ffd800;
     color: #000;
   }
+
+  ${media.desktop} {
+    margin-bottom: 0;
+  }
 `;
 
 export const MenuButton = styled.button`
@@ -66,6 +100,10 @@ export const MenuButton = styled.button`
     background: #ff0000;
     color: #ffffff;
   }
+
+  ${media.desktop} {
+    display: none;
+  }
 `;
 
 export const MobileNavigationMenu = styled.nav<IDropdownMenuState>`
@@ -82,6 +120,7 @@ export const MobileNavigationMenu = styled.nav<IDropdownMenuState>`
           display: flex;
           align-items: center;
           flex-direction: column;
+          transition: height 10.5s;
         `
       : css`
           display: none;
