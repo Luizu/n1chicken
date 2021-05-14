@@ -20,6 +20,10 @@ export default createGlobalStyle`
     }
   }
 
+  body{
+    overflow-y: hidden;
+  }
+
   body, input, button {
     font: 14px Roboto, sans-serif;
   }
