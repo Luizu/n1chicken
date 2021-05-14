@@ -31,6 +31,11 @@ export const Content = styled.div`
 export const Logo = styled.img`
   width: 90px;
   height: 90px;
+
+  ${media.desktop} {
+    width: 120px;
+    height: 120px;
+  }
 `;
 
 export const Navbar = styled.nav`

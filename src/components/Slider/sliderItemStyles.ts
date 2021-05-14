@@ -36,6 +36,10 @@ export const Title = styled.div`
   line-height: 6rem;
   margin: 8rem auto;
   text-align: center;
+
+  ${media.desktop} {
+    margin-top: 18rem;
+  }
 `;
 
 export const Description = styled.div`
