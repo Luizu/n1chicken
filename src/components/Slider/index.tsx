@@ -8,8 +8,8 @@ export function Slider(): JSX.Element {
   return (
     <Container>
       <Carousel autoPlay showStatus={false} infiniteLoop>
-        <SliderItem name="frango" title="frangrinho" />
-        <SliderItem name="burguer" title="burguinho" />
+        <SliderItem name="frango" />
+        <SliderItem name="burguer" />
       </Carousel>
     </Container>
   );
