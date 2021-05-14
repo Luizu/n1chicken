@@ -21,7 +21,7 @@ export default createGlobalStyle`
   }
 
   body{
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   body, input, button {
