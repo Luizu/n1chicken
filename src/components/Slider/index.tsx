@@ -7,7 +7,7 @@ import { SliderItem } from './SliderItem';
 export function Slider(): JSX.Element {
   return (
     <Container>
-      <Carousel autoPlay showStatus={false} infiniteLoop>
+      <Carousel autoPlay showStatus={false} infiniteLoop showThumbs={false}>
         <SliderItem name="frango" />
         <SliderItem name="burguer" />
       </Carousel>
