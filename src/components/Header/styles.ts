@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 const media = {
   maxMobile: '@media(max-width:800px)',
-  desktop: '@media(min-width: 1280px)',
+  desktop: '@media(min-width: 1000px)',
 };
 
 interface IDropdownMenuState {

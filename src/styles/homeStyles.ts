@@ -99,9 +99,10 @@ export const AboutContent = styled.div`
 `;
 
 export const AboutCityImg = styled.div`
-  display: hidden;
+  display: none;
 
   ${media.laptop} {
+    display: initial;
     position: relative;
     margin: 40px 0;
   }
@@ -110,6 +111,7 @@ export const CityImg1 = styled.img`
   display: none;
 
   ${media.laptop} {
+    display: initial;
     position: absolute;
     top: 10px;
     left: 50px;
@@ -119,6 +121,7 @@ export const CityImg2 = styled.img`
   display: none;
 
   ${media.laptop} {
+    display: initial;
     position: absolute;
     top: 260px;
     left: 50px;
