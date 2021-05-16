@@ -107,14 +107,22 @@ export const AboutCityImg = styled.div`
   }
 `;
 export const CityImg1 = styled.img`
-  position: absolute;
-  top: 10px;
-  left: 50px;
+  display: none;
+
+  ${media.laptop} {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+  }
 `;
 export const CityImg2 = styled.img`
-  position: absolute;
-  top: 260px;
-  left: 50px;
+  display: none;
+
+  ${media.laptop} {
+    position: absolute;
+    top: 260px;
+    left: 50px;
+  }
 `;
 
 export const AboutTextContent = styled.div`
