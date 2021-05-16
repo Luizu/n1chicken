@@ -21,7 +21,7 @@ import {
   AboutButton,
   AboutSeal,
   AboutProductImg,
-} from './homeStyles';
+} from '../styles/homeStyles';
 import { Card } from '../components/Card';
 
 export default function Home(): JSX.Element {
