@@ -1,5 +1,4 @@
-import { Slider } from '../components/Slider';
-import { Header } from '../components/Header';
+import { FiMapPin } from 'react-icons/fi';
 import {
   Container,
   FeaturedSection,
@@ -21,8 +20,22 @@ import {
   AboutButton,
   AboutSeal,
   AboutProductImg,
+  UnitsSection,
+  UnitsSectionBackground,
+  UnitsContent,
+  UnitsImg,
+  UnitsDescription,
+  UnitsUpTrait,
+  UnitsText,
+  UnitsDownTrait,
+  UnitsTextHighlight,
+  UnitsButton,
 } from '../styles/homeStyles';
+
+import { Slider } from '../components/Slider';
 import { Card } from '../components/Card';
+import { Header } from '../components/Header';
+import { MovingBackground } from '../components/MovingBackground';
 
 export default function Home(): JSX.Element {
   return (
@@ -70,6 +83,25 @@ export default function Home(): JSX.Element {
           </AboutImgContent>
         </AboutContent>
       </AboutSection>
+
+      <UnitsSection>
+        <UnitsSectionBackground />
+        <UnitsContent>
+          <UnitsImg src="images/mapa.png" />
+          <UnitsDescription>
+            <UnitsUpTrait src="images/traco-cima.png" />
+            <UnitsText>
+              <UnitsTextHighlight>ENCONTRE A</UnitsTextHighlight>
+              UNIDADE MAIS PRÓXIMA
+            </UnitsText>
+            <UnitsDownTrait src="images/traco-baixo.png" />
+            <UnitsButton>
+              <FiMapPin size="20" /> ENCONTRAR UNIDADE
+            </UnitsButton>
+          </UnitsDescription>
+        </UnitsContent>
+        <MovingBackground />
+      </UnitsSection>
     </Container>
   );
 }

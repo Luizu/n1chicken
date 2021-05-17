@@ -266,3 +266,144 @@ export const AboutProductImg = styled.img`
     height: 800px;
   }
 `;
+
+export const UnitsSection = styled.div`
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+`;
+
+export const UnitsSectionBackground = styled.div`
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+  background: url('images/background.jpg') no-repeat center;
+  background-size: auto;
+`;
+
+export const UnitsContent = styled.div`
+  width: 100vw;
+  margin: 1rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+
+  ${media.laptop} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+`;
+
+export const UnitsImg = styled.img`
+  @keyframes pulseEffect {
+    0% {
+      transform: scale(1); /* scaling to 1 */
+    }
+    50% {
+      transform: scale(1.2); /* increasing the size */
+    }
+    100% {
+      transform: scale(1); /* seeting back to initial size */
+    }
+  }
+
+  width: 300px;
+  height: 300px;
+  animation: pulseEffect 3.5s infinite;
+  ${media.laptop} {
+    margin: 2rem 4rem;
+    width: 500px;
+    height: 500px;
+  }
+`;
+
+export const UnitsDescription = styled.div`
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const UnitsUpTrait = styled.img`
+  width: 150px;
+
+  ${media.laptop} {
+    width: 250px;
+  }
+`;
+
+export const UnitsText = styled.div`
+  margin: 1rem 0;
+  color: #930101;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 4px;
+
+  ${media.laptop} {
+    font-size: 3rem;
+  }
+`;
+
+export const UnitsTextHighlight = styled.h1`
+  color: #ffbb03;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  letter-spacing: 4px;
+
+  ${media.laptop} {
+    font-size: 3rem;
+  }
+`;
+
+export const UnitsDownTrait = styled.img`
+  width: 150px;
+
+  ${media.laptop} {
+    width: 250px;
+  }
+`;
+
+export const UnitsButton = styled.button`
+  width: 250px;
+  height: 36px;
+  margin: 1rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffbb03;
+  color: #930101;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 20px;
+  transition: all 0.4s;
+
+  svg {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    background: #930101;
+    color: #fff;
+  }
+
+  ${media.laptop} {
+    margin: 2rem 0;
+    width: 350px;
+    height: 40px;
+  }
+`;
