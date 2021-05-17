@@ -39,6 +39,7 @@ import { Card } from '../components/Card';
 import { Header } from '../components/Header';
 import { MovingBackground } from '../components/MovingBackground';
 import { PartnersSlider } from '../components/PartnersSlider';
+import { Footer } from '../components/Footer';
 
 export default function Home(): JSX.Element {
   return (
@@ -111,6 +112,8 @@ export default function Home(): JSX.Element {
 
         <PartnersSlider />
       </PartnersSection>
+
+      <Footer />
     </Container>
   );
 }
