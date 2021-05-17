@@ -1,6 +1,6 @@
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
-import { Container } from '../../styles/pages/Unidades';
+import { Container } from '../../styles/pagesStyles/Unidades';
 
 export default function Unidades(): JSX.Element {
   return (
