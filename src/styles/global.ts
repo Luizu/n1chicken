@@ -1,5 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
+export const media = {
+  laptop: '@media(min-width: 1000px)',
+  desktop: '@media(min-width: 1400px)',
+};
+
 export default createGlobalStyle`
   * {
   margin: 0;
@@ -30,5 +35,17 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+  }
+
+  @keyframes pulseEffect {
+    0% {
+      transform: scale(1); /* scaling to 1 */
+    }
+    50% {
+      transform: scale(1.2); /* increasing the size */
+    }
+    100% {
+      transform: scale(1); /* seeting back to initial size */
+    }
   }
 `;
