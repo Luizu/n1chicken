@@ -83,6 +83,7 @@ export const FranchiseButton = styled.button`
   &:hover {
     background-color: #ffd800;
     color: #000;
+    animation: pulseEffect 1s infinite;
   }
 
   ${media.desktop} {

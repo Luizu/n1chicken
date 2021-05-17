@@ -305,18 +305,6 @@ export const UnitsContent = styled.div`
 `;
 
 export const UnitsImg = styled.img`
-  @keyframes pulseEffect {
-    0% {
-      transform: scale(1); /* scaling to 1 */
-    }
-    50% {
-      transform: scale(1.2); /* increasing the size */
-    }
-    100% {
-      transform: scale(1); /* seeting back to initial size */
-    }
-  }
-
   width: 300px;
   height: 300px;
   animation: pulseEffect 3.5s infinite;

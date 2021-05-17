@@ -6,10 +6,7 @@ export function MovingBackground(): JSX.Element {
 
   const handleScroll = () => {
     const totalHeight = window.innerHeight;
-    const totalWidth = window.innerWidth;
-    console.log(totalWidth);
     const parsedScroll = (window.pageYOffset / totalHeight) * 10;
-    console.log(parsedScroll);
     setScroll(`${parsedScroll}%`);
   };
 
