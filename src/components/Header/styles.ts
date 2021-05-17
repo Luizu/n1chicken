@@ -48,8 +48,6 @@ export const Navbar = styled.nav`
   }
 `;
 
-// export const NavItem = styled.a``;
-
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -121,10 +119,4 @@ export const MobileNavigationMenu = styled.nav<IDropdownMenuState>`
       : css`
           display: none;
         `}
-`;
-
-export const MobileNavigationLink = styled.a`
-  text-align: center;
-  padding: 1rem;
-  width: 100vw;
 `;

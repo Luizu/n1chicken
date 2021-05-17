@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
+import MobileNavItem from '../MobileNavItem';
 import { NavItem } from './NavItem';
 import {
   Container,
@@ -10,7 +11,6 @@ import {
   FranchiseButton,
   MenuButton,
   MobileNavigationMenu,
-  MobileNavigationLink,
 } from './styles';
 
 export function Header(): JSX.Element {
@@ -39,12 +39,13 @@ export function Header(): JSX.Element {
               {isActive === false ? <FiMenu size="20" /> : <FiX size="20" />}
             </MenuButton>
           </ButtonsContainer>
+
           <MobileNavigationMenu isActive={isActive}>
-            <MobileNavigationLink>HOME</MobileNavigationLink>
-            <MobileNavigationLink>QUEM SOMOS</MobileNavigationLink>
-            <MobileNavigationLink>CARDÁPIO</MobileNavigationLink>
-            <MobileNavigationLink>DEPOIMENTOS</MobileNavigationLink>
-            <MobileNavigationLink>UNIDADES</MobileNavigationLink>
+            <MobileNavItem href="/">HOME</MobileNavItem>
+            <MobileNavItem href="/quem-somos">QUEM SOMOS</MobileNavItem>
+            <MobileNavItem href="/cardapio">CARDÁPIO</MobileNavItem>
+            <MobileNavItem href="/depoimentos">DEPOIMENTOS</MobileNavItem>
+            <MobileNavItem href="/unidades">UNIDADES</MobileNavItem>
           </MobileNavigationMenu>
         </Content>
       </Container>
