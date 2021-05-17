@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { PageBanner } from '../../components/PageBanner';
+import { MovingBackground } from '../../components/MovingBackground';
 
 import {
   Container,
@@ -15,8 +16,7 @@ import {
   SliderContent,
   Item,
   Moving,
-} from '../../styles/pagesStyles/quem-somos';
-import { MovingBackground } from '../../components/MovingBackground';
+} from '../../styles/pagesStyles/QuemSomos';
 
 export default function About(): JSX.Element {
   return (
@@ -45,7 +45,7 @@ export default function About(): JSX.Element {
               Vamos proporcionar prazer e encantamento para as pessoas!
             </Description>
           </TextContent>
-          <SliderContent>
+          {/* <SliderContent>
             <Carousel
               autoPlay
               showStatus={false}
@@ -57,7 +57,7 @@ export default function About(): JSX.Element {
               <Item src="images/quem-somos-carousel/img3.jpg" />
               <Item src="images/quem-somos-carousel/img4.jpg" />
             </Carousel>
-          </SliderContent>
+          </SliderContent> */}
         </Content>
         <Moving>
           <MovingBackground />
