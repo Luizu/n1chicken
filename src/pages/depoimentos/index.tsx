@@ -1,6 +1,6 @@
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
-import { Container } from './styles';
+import { Container } from '../../styles/pages/Depoimentos';
 
 export default function Depoimentos(): JSX.Element {
   return (

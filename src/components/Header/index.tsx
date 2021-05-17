@@ -1,11 +1,11 @@
 import { useCallback, useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
+import { NavItem } from './NavItem';
 import {
   Container,
   Content,
   Logo,
   Navbar,
-  NavItem,
   ButtonsContainer,
   FranchiseButton,
   MenuButton,
@@ -26,11 +26,11 @@ export function Header(): JSX.Element {
         <Content>
           <Logo src="/images/Logo.png" />
           <Navbar>
-            <NavItem>HOME</NavItem>
-            <NavItem>QUEM SOMOS</NavItem>
-            <NavItem>CARDÁPIO</NavItem>
-            <NavItem>DEPOIMENTOS</NavItem>
-            <NavItem>UNIDADES</NavItem>
+            <NavItem href="/">HOME</NavItem>
+            <NavItem href="/quem-somos">QUEM SOMOS</NavItem>
+            <NavItem href="/cardapio">CARDÁPIO</NavItem>
+            <NavItem href="/depoimentos">DEPOIMENTOS</NavItem>
+            <NavItem href="/unidades">UNIDADES</NavItem>
           </Navbar>
 
           <ButtonsContainer>

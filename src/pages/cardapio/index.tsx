@@ -1,7 +1,7 @@
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 
-import { Container } from './styles';
+import { Container } from '../../styles/pages/Cardapio';
 
 export default function Cardapio(): JSX.Element {
   return (

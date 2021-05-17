@@ -1,6 +1,6 @@
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
-import { Container } from './styles';
+import { Container } from '../../styles/pages/Quem-somos';
 
 export default function About(): JSX.Element {
   return (

@@ -32,7 +32,7 @@ import {
   UnitsButton,
   PartnersSection,
   PartnersTitle,
-} from '../styles/homeStyles';
+} from '../styles/pages/Home';
 
 import { Slider } from '../components/Slider';
 import { Card } from '../components/Card';

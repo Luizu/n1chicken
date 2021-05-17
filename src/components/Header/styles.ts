@@ -48,17 +48,7 @@ export const Navbar = styled.nav`
   }
 `;
 
-export const NavItem = styled.a`
-  color: #fff;
-  padding: 1rem;
-  white-space: nowrap;
-  font-size: 1rem;
-
-  &:hover {
-    border-bottom: 2px solid #ffd800;
-    font-weight: bold;
-  }
-`;
+// export const NavItem = styled.a``;
 
 export const ButtonsContainer = styled.div`
   display: flex;
