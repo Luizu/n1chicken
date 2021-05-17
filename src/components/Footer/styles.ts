@@ -45,6 +45,7 @@ export const Sections = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 170px;
 `;
 
 export const SectionTitle = styled.h1`

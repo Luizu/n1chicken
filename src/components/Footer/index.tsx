@@ -31,6 +31,7 @@ export function Footer(): JSX.Element {
           <SectionTitle>COMERCIAL</SectionTitle>
           <RLink>Unidades</RLink>
           <RLink>Cardápio</RLink>
+          <RLink>-</RLink>
         </Sections>
 
         <Sections>
