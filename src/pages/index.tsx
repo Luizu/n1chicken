@@ -30,12 +30,15 @@ import {
   UnitsDownTrait,
   UnitsTextHighlight,
   UnitsButton,
+  PartnersSection,
+  PartnersTitle,
 } from '../styles/homeStyles';
 
 import { Slider } from '../components/Slider';
 import { Card } from '../components/Card';
 import { Header } from '../components/Header';
 import { MovingBackground } from '../components/MovingBackground';
+import { PartnersSlider } from '../components/PartnersSlider';
 
 export default function Home(): JSX.Element {
   return (
@@ -102,6 +105,12 @@ export default function Home(): JSX.Element {
         </UnitsContent>
         <MovingBackground />
       </UnitsSection>
+
+      <PartnersSection>
+        <PartnersTitle>Parceiros</PartnersTitle>
+
+        <PartnersSlider />
+      </PartnersSection>
     </Container>
   );
 }

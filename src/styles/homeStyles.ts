@@ -407,3 +407,22 @@ export const UnitsButton = styled.button`
     height: 40px;
   }
 `;
+
+export const PartnersSection = styled.section`
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const PartnersTitle = styled.h1`
+  font-size: 4rem;
+  color: #930101;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bold;
+  letter-spacing: 4px;
+
+  margin: 2rem 0;
+`;
