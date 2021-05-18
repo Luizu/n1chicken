@@ -14,6 +14,7 @@ export const Container = styled.div`
 
 export const ImageContainer = styled.img`
   height: 800px;
+  width: 100vw;
   object-fit: cover;
   opacity: 0.5;
 `;
@@ -27,6 +28,7 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 1;
 `;
 
 export const Title = styled.div`
