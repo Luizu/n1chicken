@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import { media } from '../../styles/global';
 
 interface IMotoboyAvatarProps {
   position: string;
+  positionMobile: string;
 }
 
 export const Container = styled.div`
@@ -30,6 +32,10 @@ export const MotoboyAvatar = styled.img<IMotoboyAvatarProps>`
 
   position: absolute;
   bottom: 0;
+  transition: all 0.5s;
+  transform: ${props => props.positionMobile};
 
-  left: ${props => props.position};
+  ${media.laptop} {
+    transform: ${props => props.position};
+  }
 `;

@@ -3,11 +3,15 @@ import { Container, MotoboyAvatar } from './styles';
 
 export function MovingBackground(): JSX.Element {
   const [scroll, setScroll] = useState('');
+  const [scrollMobile, setScrollMobile] = useState('');
 
   const handleScroll = () => {
-    const totalHeight = window.innerHeight;
-    const parsedScroll = (window.pageYOffset / totalHeight) * 10;
-    setScroll(`${parsedScroll}%`);
+    const windowSize = window.document.body.scrollHeight;
+
+    const parsedScroll = (window.pageYOffset * 1000) / windowSize;
+    const parsedScrollMobile = parsedScroll / 6;
+    setScroll(`translateX(${parsedScroll}%)`);
+    setScrollMobile(`translateX(${parsedScrollMobile}%)`);
   };
 
   useEffect(() => {
@@ -17,7 +21,11 @@ export function MovingBackground(): JSX.Element {
 
   return (
     <Container>
-      <MotoboyAvatar src="images/motoboy.svg" position={scroll} />
+      <MotoboyAvatar
+        src="images/motoboy.svg"
+        position={scroll}
+        positionMobile={scrollMobile}
+      />
     </Container>
   );
 }
