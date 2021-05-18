@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const media = {
+  maxMobile: '@media(max-width:800px)',
   laptop: '@media(min-width: 1000px)',
   desktop: '@media(min-width: 1400px)',
 };

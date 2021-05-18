@@ -1,9 +1,5 @@
 import styled, { css } from 'styled-components';
-
-const media = {
-  maxMobile: '@media(max-width:800px)',
-  desktop: '@media(min-width: 1000px)',
-};
+import { media } from '../../styles/global';
 
 interface IDropdownMenuState {
   isActive: boolean;
@@ -23,7 +19,7 @@ export const Content = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  ${media.desktop} {
+  ${media.laptop} {
     max-width: 1000px;
   }
 `;
@@ -32,7 +28,7 @@ export const Logo = styled.img`
   width: 90px;
   height: 90px;
 
-  ${media.desktop} {
+  ${media.laptop} {
     width: 120px;
     height: 120px;
   }
@@ -41,7 +37,7 @@ export const Logo = styled.img`
 export const Navbar = styled.nav`
   display: none;
 
-  ${media.desktop} {
+  ${media.laptop} {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +70,7 @@ export const FranchiseButton = styled.button`
     animation: pulseEffect 1s infinite;
   }
 
-  ${media.desktop} {
+  ${media.laptop} {
     margin-bottom: 0;
   }
 `;
@@ -95,7 +91,7 @@ export const MenuButton = styled.button`
     color: #ffffff;
   }
 
-  ${media.desktop} {
+  ${media.laptop} {
     display: none;
   }
 `;
