@@ -71,6 +71,12 @@ export const FeaturedButton = styled.button`
     height: 40px;
     font-size: 1rem;
   }
+
+  ${media.desktop} {
+    width: 550px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
 `;
 
 export const AboutSection = styled.section`
@@ -302,12 +308,20 @@ export const UnitsContent = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  ${media.desktop} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
 `;
 
 export const UnitsImg = styled.img`
   width: 300px;
   height: 300px;
   animation: pulseEffect 3.5s infinite;
+
   ${media.laptop} {
     margin: 2rem 4rem;
     width: 500px;

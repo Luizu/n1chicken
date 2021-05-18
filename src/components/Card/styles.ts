@@ -1,8 +1,5 @@
 import styled from 'styled-components';
-
-const media = {
-  desktop: '@media(min-width: 1280px)',
-};
+import { media } from '../../styles/global';
 
 export const Container = styled.div`
   width: 350px;
@@ -12,9 +9,14 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  ${media.desktop} {
+  ${media.laptop} {
     width: 500px;
     height: 350px;
+  }
+
+  ${media.desktop} {
+    width: 600px;
+    height: 400px;
   }
 `;
 
@@ -23,9 +25,14 @@ export const Image = styled.img`
   height: 250px;
   border-radius: 20px;
 
-  ${media.desktop} {
+  ${media.laptop} {
     width: 500px;
     height: 350px;
+  }
+
+  ${media.desktop} {
+    width: 600px;
+    height: 400px;
   }
 `;
 export const Title = styled.h1`
