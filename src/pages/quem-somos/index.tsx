@@ -45,7 +45,7 @@ export default function About(): JSX.Element {
               Vamos proporcionar prazer e encantamento para as pessoas!
             </Description>
           </TextContent>
-          {/* <SliderContent>
+          <SliderContent>
             <Carousel
               autoPlay
               showStatus={false}
@@ -57,7 +57,7 @@ export default function About(): JSX.Element {
               <Item src="images/quem-somos-carousel/img3.jpg" />
               <Item src="images/quem-somos-carousel/img4.jpg" />
             </Carousel>
-          </SliderContent> */}
+          </SliderContent>
         </Content>
         <Moving>
           <MovingBackground />

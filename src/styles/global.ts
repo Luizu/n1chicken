@@ -53,4 +53,16 @@ background: #ffd000 !important;
       transform: scale(1); /* seeting back to initial size */
     }
   }
+
+  @keyframes growEffect {
+    0% {
+      transform: scale(1); /* scaling to 1 */
+    }
+    50% {
+      transform: scale(1.5); /* increasing the size */
+    }
+    100% {
+      transform: scale(1); /* seeting back to initial size */
+    }
+  }
 `;

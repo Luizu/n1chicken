@@ -1,17 +1,38 @@
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Carousel from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-import { Container, Image } from './styles';
+import { Container, ImageContainer, Image } from './styles';
 
 export function PartnersSlider(): JSX.Element {
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <Container>
-      <Carousel autoPlay showStatus={false} infiniteLoop showThumbs={false}>
-        <Image src="images/partners/Ifood.png" />
-        <Image src="images/partners/Aryzta.png" />
-        <Image src="images/partners/BenJerrys.png" />
-        <Image src="images/partners/CocaCola.png" />
-        <Image src="images/partners/Perdigao.png" />
+      <Carousel {...settings}>
+        <ImageContainer>
+          <Image src="images/partners/Ifood.png" />
+        </ImageContainer>
+        <ImageContainer>
+          <Image src="images/partners/Aryzta.png" />
+        </ImageContainer>
+        <ImageContainer>
+          <Image src="images/partners/BenJerrys.png" />
+        </ImageContainer>
+        <ImageContainer>
+          <Image src="images/partners/CocaCola.png" />
+        </ImageContainer>
+        <ImageContainer>
+          <Image src="images/partners/Perdigao.png" />
+        </ImageContainer>
       </Carousel>
     </Container>
   );

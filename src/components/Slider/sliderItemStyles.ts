@@ -17,6 +17,10 @@ export const ImageContainer = styled.img`
   width: 100vw;
   object-fit: cover;
   opacity: 0.5;
+
+  .slick-current {
+    animation: growEffect 3.5s infinite;
+  }
 `;
 
 export const ContentContainer = styled.section``;
