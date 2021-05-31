@@ -1,5 +1,8 @@
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { PageBanner } from '../../components/PageBanner';
@@ -19,6 +22,16 @@ import {
 } from '../../styles/pagesStyles/QuemSomos';
 
 export default function About(): JSX.Element {
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <Container>
       <Header />
@@ -46,12 +59,7 @@ export default function About(): JSX.Element {
             </Description>
           </TextContent>
           <SliderContent>
-            <Carousel
-              autoPlay
-              showStatus={false}
-              infiniteLoop
-              showThumbs={false}
-            >
+            <Carousel {...settings}>
               <Item src="images/quem-somos-carousel/img1.jpg" />
               <Item src="images/quem-somos-carousel/img2.jpg" />
               <Item src="images/quem-somos-carousel/img3.jpg" />
