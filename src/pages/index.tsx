@@ -104,7 +104,7 @@ export default function Home(): JSX.Element {
             </UnitsButton>
           </UnitsDescription>
         </UnitsContent>
-        {/* <MovingBackground /> */}
+        <MovingBackground />
       </UnitsSection>
 
       <PartnersSection>
