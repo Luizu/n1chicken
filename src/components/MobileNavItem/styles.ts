@@ -9,6 +9,7 @@ export const Text = styled.a<ActiveLinkProps>`
   padding: 1rem;
   width: 100vw;
   text-decoration: none;
+  color: #494c4f;
 
   ${props =>
     props.isActive &&
