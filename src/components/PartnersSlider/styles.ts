@@ -1,8 +1,13 @@
 import styled from 'styled-components';
+import { media } from '../../styles/global';
 
 export const Container = styled.div`
   width: 100vw;
   margin-bottom: 2rem;
+
+  ${media.laptop} {
+    width: 70vw;
+  }
 
   .slick-slide {
     display: flex;
