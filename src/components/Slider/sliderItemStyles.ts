@@ -6,6 +6,7 @@ const media = {
 
 export const Container = styled.div`
   background: #000;
+  width: 100vw;
   position: relative;
   display: flex;
   justify-content: center;
