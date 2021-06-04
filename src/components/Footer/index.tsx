@@ -52,7 +52,10 @@ export function Footer(): JSX.Element {
         </Sections>
 
         <IfoodSection>
-          <IfoodLogo src="images/partners/IfoodWhite.png" />
+          <IfoodLogo
+            alt="Logo do Ifood"
+            src="https://www.n1chicken.com.br/wp-content/uploads/2020/05/ifood-logo-01.png"
+          />
           <IfoodBtn>Faça seu pedido</IfoodBtn>
         </IfoodSection>
       </SectionsContainer>

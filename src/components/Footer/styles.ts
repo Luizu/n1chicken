@@ -101,7 +101,9 @@ export const IfoodSection = styled.section`
 `;
 
 export const IfoodLogo = styled.img`
-  color: #fff;
+  filter: brightness(900%) contrast(100%) saturate(100%) blur(0)
+    hue-rotate(0deg);
+  margin: 1.5rem 0;
 `;
 
 export const IfoodBtn = styled.button`
